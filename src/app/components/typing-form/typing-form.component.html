@@ -1,0 +1,17 @@
+<div class="typing-form-container">
+  <div class="container">
+    <form (ngSubmit)="onSubmit()" class="typing-form">
+      <div class="input-group">
+        <input type="text" 
+               class="form-control" 
+               placeholder="Message Me" 
+               [(ngModel)]="message" 
+               name="message">
+        <button type="submit" 
+                class="btn btn-primary">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
